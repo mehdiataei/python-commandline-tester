@@ -19,7 +19,7 @@ while True:
 
         try:
             f_name = input(
-                "\n\nTo start the test, insert your function name from the list of available functions: \n \n ****** \n \n {}  \n \n ****** \n \n To end the program type exit: ".format(functions_list)
+                    "\n\nTo start the test, type your function name from the list of available functions (to end the program type exit): \n \n ****** \n \n {}  \n \n ****** \n \n Name the function: ".format(functions_list)
             )
 
             if (f_name == "exit"):
