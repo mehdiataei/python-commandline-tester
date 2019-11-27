@@ -46,12 +46,11 @@ while True:
             f_input_split = f_input.split(";")
             f_input_eval = [eval(i) for i in f_input_split]
 
-            if (len(f_input_eval) == 1):
-                printed_output = '({})'.format(f_input_eval[0])
-            else:
-                printed_output= tuple(f_input_eval)
-            check_input = input("\n \nIs the following input correct?  \n \n ****** \n \n {}{}  \n \n ****** \n \n y o n: ".format(f_name,
-                printed_output))
+
+            printed_input= str(f_input_eval)[1:-1]
+
+            check_input = input("\n \nIs the following input correct?  \n \n ****** \n \n {}({})  \n \n ****** \n \n y o n: ".format(f_name,
+                printed_input))
             if (check_input == "y" or check_input == "yes"):
                 break
             else:
@@ -68,15 +67,7 @@ while True:
 
         try:
             f_output = eval(input("\n \nInsert your expected output:"))
-            check_output = input("\n \nIs the following output correct?  \n \n ****** \n \n {}  \n \n ****** \n \n y o n: ".format(
-                f_output))
-            if (check_input == "y" or check_input == "yes"):
-                break
-            else:
-                print("Retry")
-                continue
             break
-
         except ValueError:
             print("\nInvalid output. Try again.")
             continue

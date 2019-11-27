@@ -1,3 +1,7 @@
+def return_str(string):
+    return string
+
+
 def add(a,b):
     return a+b
 
