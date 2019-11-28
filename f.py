@@ -1,6 +1,9 @@
 def return_str(string):
     return string
 
+def nothing():
+    pass
+
 
 def add(a,b):
     return a+b
@@ -21,3 +24,18 @@ def addMixedTypes(a, b):
         sum += i
 
     return sum + a
+
+
+
+class Addition(object):
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def update_params(self,a,b):
+        self.a = a
+        self.b = b
+    
+    def result(self):
+        return (self.a + self.b)
+        
