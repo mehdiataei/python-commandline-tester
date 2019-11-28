@@ -77,7 +77,7 @@ while True:
 
                     except: 
             
-                        print("\n\nERROR: Wrong number of inputs. Retry.")
+                    print("\n\nERROR: Possibly wrong number of inputs or input types. Retry.")
                     continue
 
                 else:
@@ -215,7 +215,7 @@ while True:
 
                 except: 
         
-                    print("\n\nERROR: Wrong number of inputs. Retry.")
+                    print("\n\nERROR: Possibly wrong number of inputs or input types. Retry.")
                     continue
 
 
