@@ -77,11 +77,11 @@ while True:
 
                     except: 
             
-                    print("\n\nERROR: Possibly wrong number of inputs or input types. Retry.")
-                    continue
+                        print("\n\nERROR: Possibly wrong number of inputs or input types. Retry.")
+                        continue
 
                 else:
-                    print("Retry")
+                    print("Retry.")
                     continue
 
             except ValueError:
